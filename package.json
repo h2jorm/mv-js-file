@@ -1,0 +1,12 @@
+{
+  "name": "mv-js-file",
+  "version": "0.1.0",
+  "main": "index.js",
+  "repository": "git@github.com:liqingfx/mv-js-file.git",
+  "author": "liqing <liqing.fx@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "mkdirp": "^0.5.1"
+  }
+}
