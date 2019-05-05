@@ -5,7 +5,7 @@ Move a JS file from source to destination and fix related import references auto
 
 ## Example
 
-The origin files are
+The origin files are:
 
 ```
 // src/components/A.js
@@ -49,3 +49,7 @@ And now:
 const B = () => (<A />);
 export default B;
 ```
+
+CMD is available:
+
+`mv-js-file src/components/A.js src/components/NewA.js --alias @components=src/components`

@@ -113,11 +113,9 @@ function prefixImportPath(content, filepath, destImportPath, aliases) {
 function fixImportPath(content, filepath, srcImportPath, destImportPath, aliases) {
   let changed = false;
   const ret = transform(content, source => {
-    console.log(source);
     if (isCoreImport(source, aliases)) {
       return source;
     }
-    console.log(source);
     const currentImportPath = expandAlias(filepath, source, aliases);
     if (isPathEqual(currentImportPath, srcImportPath)) {
       const newPath = foldWithAlias(filepath, destImportPath, aliases);
